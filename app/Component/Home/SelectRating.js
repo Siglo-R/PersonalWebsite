@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Data from '../../../Shared/Data';
+import Data from '@/shared/Data';
 
 function SelectRating({ onSelectRatings }) {
     const [selectedRating, setSelectedRating] = useState([]);
