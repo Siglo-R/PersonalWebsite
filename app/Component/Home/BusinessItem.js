@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Image from 'next/image';
-import  BusinessContext  from '@/app/Component/Home/BusinessContext';
 import { UserLocationProvider, useUserLocation } from '@/app/Component/Home/UserLocationContext';
+import  BusinessContext  from '@/app/Component/Home/BusinessContext';
 
 function BusinessItem({ business }) {
   const GOOGLE_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY; // Use process.env to access your API key
