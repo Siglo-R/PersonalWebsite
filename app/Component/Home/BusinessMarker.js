@@ -1,6 +1,6 @@
 import { MarkerF, OverlayView } from '@react-google-maps/api';
 import React, { useContext, useEffect, useState } from 'react';
-import { BusinessContext } from '@/context/BusinessContext';
+import { BusinessContext } from '@/app/Component/Home/BusinessContext';
 import Image from 'next/image';
 import { UserLocationProvider,useUserLocation } from '../../../context/UserLocationContext'; 
 
