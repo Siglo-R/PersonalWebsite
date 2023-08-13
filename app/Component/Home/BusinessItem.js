@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Image from 'next/image';
-import { BusinessContext } from '@/app/Component/Home/BusinessContext';
+import  BusinessContext  from '@/app/Component/Home/BusinessContext';
 import { UserLocationProvider, useUserLocation } from '@/app/Component/Home/UserLocationContext';
 
 function BusinessItem({ business }) {
