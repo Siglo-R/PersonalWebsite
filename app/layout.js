@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import HeaderBar from './Component/HeaderBar';
 import { Inter } from 'next/font/google';
 import { useUserLocation, UserLocationProvider } from '@/app/Component/Home/UserLocationContext';
-import { BusinessContext } from '@/app/Component/Home/BusinessContext';
+import BusinessContext from '@/app/Component/Home/BusinessContext';
 const inter = Inter({ subsets: ['latin'] });
 
 
