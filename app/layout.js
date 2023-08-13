@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import HeaderBar from './Component/HeaderBar';
 import { Inter } from 'next/font/google';
-import { useUserLocation, UserLocationProvider } from '../context/UserLocationContext';
-import { BusinessContext } from '../context/BusinessContext.js'
+import { useUserLocation, UserLocationProvider } from '@/app/Component/Home/UserLocationContext';
+import { BusinessContext } from '@/context/BusinessContext.js'
 const inter = Inter({ subsets: ['latin'] });
 
 
