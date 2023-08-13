@@ -1,7 +1,7 @@
 import { GoogleMap, LoadScript, Marker, MarkerF } from '@react-google-maps/api';
 import React, { useContext } from 'react';
 import BusinessMarker from './BusinessMarker';
-import { BusinessContext } from '../../../context/BusinessContext';
+import { BusinessContext } from '@/context/BusinessContext';
 import { useUserLocation } from '@/context/UserLocationContext';
 
 function GoogleMapView({ businessList }) {
