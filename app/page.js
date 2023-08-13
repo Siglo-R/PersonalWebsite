@@ -5,7 +5,7 @@ import RangeSelect from './Component/Home/RangeSelect';
 import SelectRating from './Component/Home/SelectRating'; // Import the SelectRating component
 import GoogleMapView from './Component/Home/GoogleMapView';
 import GlobalApi from '@/Shared/GlobalApi';
-import { UserLocationProvider, useUserLocation } from './../context/UserLocationContext';
+import { UserLocationProvider, useUserLocation } from '@/context/UserLocationContext';
 import BusinessList from './Component/Home/BusinessList';
 import { BusinessContext } from '@/context/BusinessContext';
 import ForLoading from './Component/Home/ForLoading';
