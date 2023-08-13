@@ -26,49 +26,6 @@ body {
     height: 200px;
   }
 
-  .google-btn {
-    width: 184px;
-    height: 36px;
-    border-radius: 2px;
-    background-color: #4285f4;
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
-  }
-
-  .google-icon-wrapper {
-    position: absolute;
-    margin-top: 0.5px;
-    margin-left: 1px;
-    width: 40px;
-    height: 33px;
-    border-radius: 2px;
-    background-color: white;
-  }
-
-  .google-icon {
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 11px;
-    width: 18px;
-    height: 18px;
-  }
-
-  .btn-text {
-    float: right;
-    margin: 11px 11px 2px 0;
-    font-size: 14px;
-    color: white;
-    letter-spacing: 0.2px;
-    font-family: "Roboto";
-  }
-
-  .google-btn:hover {
-    box-shadow: 0 0 6px #4285f4;
-  }
-
-  .google-btn:active {
-    background: #1669F2;
-  }
-
   .touch-scroll-hide {
     -webkit-overflow-scrolling: touch;
   }
@@ -85,5 +42,20 @@ body {
   
   .food-background {
     background-color: #F5E7E2; /* Use your desired background color */
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .slideUp {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 0.5s ease-in-out, slideUp 0.5s ease-in-out;
   }
 }

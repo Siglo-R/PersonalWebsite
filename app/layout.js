@@ -1,18 +1,35 @@
 "use client"
-import { useEffect } from 'react'
-import './globals.css'
-import { Inter } from 'next/font/google'
-import Image from 'next/image'
+import React, { useState } from 'react';
+import HeaderBar from './Component/HeaderBar';
+import { Inter } from 'next/font/google';
+import { useUserLocation, UserLocationProvider } from '../context/UserLocationContext';
+import { BusinessContext } from '../context/BusinessContext.js'
+const inter = Inter({ subsets: ['latin'] });
 
-const inter = Inter({ subsets: ['latin'] })
+
 
 export default function RootLayout({ children }) {
+  const [businessContext, setBusinessContext] = useState([]);
+  const [selectedBusiness, setSelectedBusiness] = useState(null);
 
+  return (
+    <BusinessContext.Provider value={{ businessContext, setBusinessContext, selectedBusiness, setSelectedBusiness }}>
+      <UserLocationProvider>
+        <LayoutContent>{children}</LayoutContent>
+      </UserLocationProvider>
+    </BusinessContext.Provider>
+  );
+}
+
+function LayoutContent({ children }) {
+  const userLocation = useUserLocation();
 
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}</body>
+        <HeaderBar />
+        {children}
+      </body>
     </html>
-  )
+  );
 }

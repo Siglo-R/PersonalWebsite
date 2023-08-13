@@ -20,7 +20,7 @@ export function UserLocationProvider({ children }) {
   };
 
   useEffect(() => {
-    getUserLocation(); // Call the function here
+    getUserLocation(); 
   }, []);
 
   

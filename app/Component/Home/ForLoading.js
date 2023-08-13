@@ -2,7 +2,8 @@ import React from 'react';
 
 function ForLoading() {
   return (
-    <div className='w-[300px] h-[41vh] p-5 bg-white shadow-md rounded-md flex flex-col justify-between'>
+    <div className='w-[300px] h-[41vh] p-5 bg-white shadow-md rounded-md flex flex-col justify-between'
+    style={{ marginTop: '30px' }} >
       <div className='flex justify-center'>
         <div className='rounded-lg bg-slate-200 h-[200px] w-[200px]'></div>
       </div>
@@ -19,5 +20,6 @@ function ForLoading() {
     </div>
   );
 }
+
 
 export default ForLoading;

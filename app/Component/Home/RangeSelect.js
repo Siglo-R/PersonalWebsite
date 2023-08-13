@@ -13,11 +13,11 @@ function RangeSelect({onRadiusChange}) {
          bg-gray-200 cursor-pointer
           hover:bg-gray-400 focus:outline-none focus:bg-brown-400'
         min="0"
-        max="100"
-        step="5"
+        max="20"
+        step="1"
         onChange={(e)=>{setRadius(e.target.value);onRadiusChange(e.target.value)}}
         defaultValue={radius}/>
-        <label>{radius} in Meter</label>
+        <label>{radius} in Kilometers</label>
     </div>
   );
 }
